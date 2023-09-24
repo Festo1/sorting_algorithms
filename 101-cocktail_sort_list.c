@@ -80,7 +80,7 @@ void cocktail_sort_list(listint_t **list)
 	while (shaken_not_stirred == false)
 	{
 		shaken_not_stirred = true;
-		
+
 		/* Pass forward through the list, swapping adjacent nodes if needed.*/
 		for (shaker = *list; shaker != tail; shaker = shaker->next)
 		{
