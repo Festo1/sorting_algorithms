@@ -61,7 +61,7 @@ void merge_sort_recursive(int *subarr, int *buff, size_t front, size_t back)
 		mid = front + (back - front) / 2;
 		/* Sort first half */
 		merge_sort_recursive(subarr, buff, front, mid);
-		/* Sort second half */ 
+		/* Sort second half */
 		merge_sort_recursive(subarr, buff, mid, back);
 		/* Merge sorted halves */
 		merge_subarr(subarr, buff, front, mid, back);
