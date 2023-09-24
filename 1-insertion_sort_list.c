@@ -16,14 +16,14 @@ void swap_nodes(listint_t **h, listint_t **n1, listint_t *n2)
 	/* Adjust prev pointers */
 	n2->prev = (*n1)->prev;
 	n2->next = *n1;
-	
+
 	/* Update the head pointer if needed */
 	if ((*n1)->prev != NULL)
 		(*n1)->prev->next = n2;
 	else
 		*h = n2;
-	
-	/* Update prev pointer of n1 */	
+
+	/* Update prev pointer of n1 */
 	(*n1)->prev = n2;
 	*n1 = n2->prev;
 }
